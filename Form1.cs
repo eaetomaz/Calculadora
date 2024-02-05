@@ -135,7 +135,7 @@ namespace Calculadora
             try
             {
                 // Verificar se há um valor a ser utilizado
-                if (!string.IsNullOrEmpty(textResultado.Text))
+                if (!string.IsNullOrEmpty(textResultado.Text) && Convert.ToDecimal(textResultado.Text) > 0)
                 {
                     switch (OperacaoSelecionada)
                     {
