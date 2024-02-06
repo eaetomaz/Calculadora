@@ -233,7 +233,8 @@
             // lblOperacao
             // 
             lblOperacao.AutoSize = true;
-            lblOperacao.Location = new Point(43, 61);
+            lblOperacao.Location = new Point(51, 30);
+            lblOperacao.Margin = new Padding(4, 0, 4, 0);
             lblOperacao.Name = "lblOperacao";
             lblOperacao.Size = new Size(0, 17);
             lblOperacao.TabIndex = 18;
@@ -252,12 +253,12 @@
             // 
             // textResultado
             // 
-            textResultado.Location = new Point(9, 20);
-            textResultado.Margin = new Padding(3, 2, 3, 2);
+            textResultado.Location = new Point(11, 27);
+            textResultado.Margin = new Padding(4, 3, 4, 3);
             textResultado.MaxLength = 8;
             textResultado.Name = "textResultado";
             textResultado.ReadOnly = true;
-            textResultado.Size = new Size(281, 25);
+            textResultado.Size = new Size(350, 26);
             textResultado.TabIndex = 21;
             textResultado.TextAlign = HorizontalAlignment.Right;
             // 

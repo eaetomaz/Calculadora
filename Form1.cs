@@ -134,7 +134,7 @@ namespace Calculadora
             try
             {
                 // Verificar se há um valor a ser utilizado
-                if (!string.IsNullOrEmpty(textResultado.Text) && Convert.ToDouble(textResultado.Text) > 0)
+                if (!string.IsNullOrEmpty(textResultado.Text))
                 {
                     switch (OperacaoSelecionada)
                     {
