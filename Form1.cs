@@ -10,8 +10,8 @@ namespace Calculadora
     public partial class Form1 : Form
     {
 
-        public decimal Resultado { get; set; }
-        public decimal Valor { get; set; }
+        public double Resultado { get; set; }
+        public double Valor { get; set; }
         private Operacao OperacaoSelecionada { get; set; }
 
         private enum Operacao
@@ -113,15 +113,14 @@ namespace Calculadora
                 case Keys.Delete:
                     btnlimpar.PerformClick();
                     break;
-                case Keys.Oemplus:
-                case Keys.Enter:
-                    btnigual.PerformClick();
-                    break;
                 case Keys.Decimal:
                 case Keys.Oemcomma:
                     btnvirgula.PerformClick();
                     break;
-
+                case Keys.Oemplus:
+                case Keys.Enter:
+                    btnigual.PerformClick();
+                    break;
             }
         }
 
@@ -135,26 +134,27 @@ namespace Calculadora
             try
             {
                 // Verificar se há um valor a ser utilizado
-                if (!string.IsNullOrEmpty(textResultado.Text))
+                if (!string.IsNullOrEmpty(textResultado.Text) && Convert.ToDouble(textResultado.Text) > 0)
                 {
                     switch (OperacaoSelecionada)
                     {
                         case Operacao.Adicao:
-                            Resultado = Valor + Convert.ToDecimal(textResultado.Text);
+                            Resultado = Valor + Convert.ToDouble(textResultado.Text);
                             break;
                         case Operacao.Multiplicacao:
-                            Resultado = Valor * Convert.ToDecimal(textResultado.Text);
+                            Resultado = Valor * Convert.ToDouble(textResultado.Text);
                             break;
                         case Operacao.Subtracao:
-                            Resultado = Valor - Convert.ToDecimal(textResultado.Text);
+                            Resultado = Valor - Convert.ToDouble(textResultado.Text);
                             break;
                         case Operacao.Divisao:
-                            Resultado = Valor / Convert.ToDecimal(textResultado.Text);
+                            Resultado = Valor / Convert.ToDouble(textResultado.Text);
                             break;
                     }
-
+                    
                     textResultado.Text = Convert.ToString(Resultado);
                     lblOperacao.Text = "=";
+                    
                 }
                 else
                 {
@@ -181,7 +181,7 @@ namespace Calculadora
                 if (!string.IsNullOrEmpty(textResultado.Text))
                 {
                     OperacaoSelecionada = Operacao.Adicao;
-                    Valor = Convert.ToDecimal(textResultado.Text);
+                    Valor = Convert.ToDouble(textResultado.Text);
                     textResultado.Text = "";
                     lblOperacao.Text = "+";
                 }
@@ -221,7 +221,7 @@ namespace Calculadora
                 if (!string.IsNullOrEmpty(textResultado.Text))
                 {
                     OperacaoSelecionada = Operacao.Subtracao;
-                    Valor = Convert.ToDecimal(textResultado.Text);
+                    Valor = Convert.ToDouble(textResultado.Text);
                     textResultado.Text = "";
                     lblOperacao.Text = "-";
                 }
@@ -257,7 +257,7 @@ namespace Calculadora
                 if (!string.IsNullOrEmpty(textResultado.Text))
                 {
                     OperacaoSelecionada = Operacao.Multiplicacao;
-                    Valor = Convert.ToDecimal(textResultado.Text);
+                    Valor = Convert.ToDouble(textResultado.Text);
                     textResultado.Text = "";
                     lblOperacao.Text = "*";
                 }
@@ -297,10 +297,11 @@ namespace Calculadora
                 // Verificar se há um valor antes de atribuir a operação
                 if (!string.IsNullOrEmpty(textResultado.Text))
                 {
-                    OperacaoSelecionada = Operacao.Divisao;
-                    Valor = Convert.ToDecimal(textResultado.Text);
-                    textResultado.Text = "";
-                    lblOperacao.Text = "/";
+                        OperacaoSelecionada = Operacao.Divisao;
+                        Valor = Convert.ToDouble(textResultado.Text);
+                        textResultado.Text = "";
+                        lblOperacao.Text = "/";
+
                 }
                 else
                 {
@@ -323,6 +324,7 @@ namespace Calculadora
         private void btnlimpar_Click(object sender, EventArgs e)
         {
             textResultado.Text = "";
+            lblOperacao.Text = "";
         }
 
 

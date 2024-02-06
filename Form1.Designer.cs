@@ -52,10 +52,10 @@
             // btn0
             // 
             btn0.Cursor = Cursors.Hand;
-            btn0.Location = new Point(102, 325);
-            btn0.Margin = new Padding(4, 3, 4, 3);
+            btn0.Location = new Point(82, 240);
+            btn0.Margin = new Padding(3, 2, 3, 2);
             btn0.Name = "btn0";
-            btn0.Size = new Size(81, 55);
+            btn0.Size = new Size(65, 41);
             btn0.TabIndex = 1;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = true;
@@ -64,10 +64,10 @@
             // btn1
             // 
             btn1.Cursor = Cursors.Hand;
-            btn1.Location = new Point(11, 264);
-            btn1.Margin = new Padding(4, 3, 4, 3);
+            btn1.Location = new Point(9, 195);
+            btn1.Margin = new Padding(3, 2, 3, 2);
             btn1.Name = "btn1";
-            btn1.Size = new Size(81, 55);
+            btn1.Size = new Size(65, 41);
             btn1.TabIndex = 2;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = true;
@@ -76,10 +76,10 @@
             // btn2
             // 
             btn2.Cursor = Cursors.Hand;
-            btn2.Location = new Point(102, 264);
-            btn2.Margin = new Padding(4, 3, 4, 3);
+            btn2.Location = new Point(82, 195);
+            btn2.Margin = new Padding(3, 2, 3, 2);
             btn2.Name = "btn2";
-            btn2.Size = new Size(81, 55);
+            btn2.Size = new Size(65, 41);
             btn2.TabIndex = 3;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // btn3
             // 
             btn3.Cursor = Cursors.Hand;
-            btn3.Location = new Point(191, 264);
-            btn3.Margin = new Padding(4, 3, 4, 3);
+            btn3.Location = new Point(153, 195);
+            btn3.Margin = new Padding(3, 2, 3, 2);
             btn3.Name = "btn3";
-            btn3.Size = new Size(81, 55);
+            btn3.Size = new Size(65, 41);
             btn3.TabIndex = 4;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = true;
@@ -100,10 +100,10 @@
             // btn4
             // 
             btn4.Cursor = Cursors.Hand;
-            btn4.Location = new Point(11, 203);
-            btn4.Margin = new Padding(4, 3, 4, 3);
+            btn4.Location = new Point(9, 150);
+            btn4.Margin = new Padding(3, 2, 3, 2);
             btn4.Name = "btn4";
-            btn4.Size = new Size(81, 55);
+            btn4.Size = new Size(65, 41);
             btn4.TabIndex = 5;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
@@ -112,10 +112,10 @@
             // btn6
             // 
             btn6.Cursor = Cursors.Hand;
-            btn6.Location = new Point(191, 203);
-            btn6.Margin = new Padding(4, 3, 4, 3);
+            btn6.Location = new Point(153, 150);
+            btn6.Margin = new Padding(3, 2, 3, 2);
             btn6.Name = "btn6";
-            btn6.Size = new Size(81, 55);
+            btn6.Size = new Size(65, 41);
             btn6.TabIndex = 7;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = true;
@@ -124,10 +124,10 @@
             // btn7
             // 
             btn7.Cursor = Cursors.Hand;
-            btn7.Location = new Point(11, 142);
-            btn7.Margin = new Padding(4, 3, 4, 3);
+            btn7.Location = new Point(9, 105);
+            btn7.Margin = new Padding(3, 2, 3, 2);
             btn7.Name = "btn7";
-            btn7.Size = new Size(81, 55);
+            btn7.Size = new Size(65, 41);
             btn7.TabIndex = 8;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = true;
@@ -136,10 +136,10 @@
             // btn8
             // 
             btn8.Cursor = Cursors.Hand;
-            btn8.Location = new Point(102, 142);
-            btn8.Margin = new Padding(4, 3, 4, 3);
+            btn8.Location = new Point(82, 105);
+            btn8.Margin = new Padding(3, 2, 3, 2);
             btn8.Name = "btn8";
-            btn8.Size = new Size(81, 55);
+            btn8.Size = new Size(65, 41);
             btn8.TabIndex = 9;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = true;
@@ -148,10 +148,10 @@
             // btn9
             // 
             btn9.Cursor = Cursors.Hand;
-            btn9.Location = new Point(191, 142);
-            btn9.Margin = new Padding(4, 3, 4, 3);
+            btn9.Location = new Point(153, 105);
+            btn9.Margin = new Padding(3, 2, 3, 2);
             btn9.Name = "btn9";
-            btn9.Size = new Size(81, 55);
+            btn9.Size = new Size(65, 41);
             btn9.TabIndex = 10;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = true;
@@ -160,10 +160,10 @@
             // btnigual
             // 
             btnigual.Cursor = Cursors.Hand;
-            btnigual.Location = new Point(191, 325);
-            btnigual.Margin = new Padding(4, 3, 4, 3);
+            btnigual.Location = new Point(153, 240);
+            btnigual.Margin = new Padding(3, 2, 3, 2);
             btnigual.Name = "btnigual";
-            btnigual.Size = new Size(81, 55);
+            btnigual.Size = new Size(65, 41);
             btnigual.TabIndex = 11;
             btnigual.Text = "=";
             btnigual.UseVisualStyleBackColor = true;
@@ -173,10 +173,10 @@
             // 
             btnmais.Cursor = Cursors.Hand;
             btnmais.Font = new Font("Microsoft PhagsPa", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnmais.Location = new Point(280, 325);
-            btnmais.Margin = new Padding(4, 3, 4, 3);
+            btnmais.Location = new Point(224, 240);
+            btnmais.Margin = new Padding(3, 2, 3, 2);
             btnmais.Name = "btnmais";
-            btnmais.Size = new Size(81, 55);
+            btnmais.Size = new Size(65, 41);
             btnmais.TabIndex = 13;
             btnmais.Text = "+";
             btnmais.UseVisualStyleBackColor = true;
@@ -185,10 +185,10 @@
             // btnmenos
             // 
             btnmenos.Cursor = Cursors.Hand;
-            btnmenos.Location = new Point(280, 264);
-            btnmenos.Margin = new Padding(4, 3, 4, 3);
+            btnmenos.Location = new Point(224, 195);
+            btnmenos.Margin = new Padding(3, 2, 3, 2);
             btnmenos.Name = "btnmenos";
-            btnmenos.Size = new Size(81, 55);
+            btnmenos.Size = new Size(65, 41);
             btnmenos.TabIndex = 14;
             btnmenos.Text = "-";
             btnmenos.UseVisualStyleBackColor = true;
@@ -197,10 +197,10 @@
             // btnmultiplicacao
             // 
             btnmultiplicacao.Cursor = Cursors.Hand;
-            btnmultiplicacao.Location = new Point(280, 203);
-            btnmultiplicacao.Margin = new Padding(4, 3, 4, 3);
+            btnmultiplicacao.Location = new Point(224, 150);
+            btnmultiplicacao.Margin = new Padding(3, 2, 3, 2);
             btnmultiplicacao.Name = "btnmultiplicacao";
-            btnmultiplicacao.Size = new Size(81, 55);
+            btnmultiplicacao.Size = new Size(65, 41);
             btnmultiplicacao.TabIndex = 15;
             btnmultiplicacao.Text = "*";
             btnmultiplicacao.UseVisualStyleBackColor = true;
@@ -209,10 +209,10 @@
             // btndivisao
             // 
             btndivisao.Cursor = Cursors.Hand;
-            btndivisao.Location = new Point(280, 142);
-            btndivisao.Margin = new Padding(4, 3, 4, 3);
+            btndivisao.Location = new Point(224, 105);
+            btndivisao.Margin = new Padding(3, 2, 3, 2);
             btndivisao.Name = "btndivisao";
-            btndivisao.Size = new Size(81, 55);
+            btndivisao.Size = new Size(65, 41);
             btndivisao.TabIndex = 16;
             btndivisao.Text = "/";
             btndivisao.UseVisualStyleBackColor = true;
@@ -221,10 +221,10 @@
             // btnlimpar
             // 
             btnlimpar.Cursor = Cursors.Hand;
-            btnlimpar.Location = new Point(280, 83);
-            btnlimpar.Margin = new Padding(4, 3, 4, 3);
+            btnlimpar.Location = new Point(224, 61);
+            btnlimpar.Margin = new Padding(3, 2, 3, 2);
             btnlimpar.Name = "btnlimpar";
-            btnlimpar.Size = new Size(81, 53);
+            btnlimpar.Size = new Size(65, 39);
             btnlimpar.TabIndex = 17;
             btnlimpar.Text = "C";
             btnlimpar.UseVisualStyleBackColor = true;
@@ -233,19 +233,18 @@
             // lblOperacao
             // 
             lblOperacao.AutoSize = true;
-            lblOperacao.Location = new Point(51, 30);
-            lblOperacao.Margin = new Padding(4, 0, 4, 0);
+            lblOperacao.Location = new Point(43, 61);
             lblOperacao.Name = "lblOperacao";
-            lblOperacao.Size = new Size(0, 23);
+            lblOperacao.Size = new Size(0, 17);
             lblOperacao.TabIndex = 18;
             // 
             // btncinco
             // 
             btncinco.Cursor = Cursors.Hand;
-            btncinco.Location = new Point(102, 203);
-            btncinco.Margin = new Padding(4, 3, 4, 3);
+            btncinco.Location = new Point(82, 150);
+            btncinco.Margin = new Padding(3, 2, 3, 2);
             btncinco.Name = "btncinco";
-            btncinco.Size = new Size(81, 55);
+            btncinco.Size = new Size(65, 41);
             btncinco.TabIndex = 20;
             btncinco.Text = "5";
             btncinco.UseVisualStyleBackColor = true;
@@ -253,12 +252,12 @@
             // 
             // textResultado
             // 
-            textResultado.Location = new Point(11, 27);
-            textResultado.Margin = new Padding(4, 3, 4, 3);
+            textResultado.Location = new Point(9, 20);
+            textResultado.Margin = new Padding(3, 2, 3, 2);
             textResultado.MaxLength = 8;
             textResultado.Name = "textResultado";
             textResultado.ReadOnly = true;
-            textResultado.Size = new Size(350, 26);
+            textResultado.Size = new Size(281, 25);
             textResultado.TabIndex = 21;
             textResultado.TextAlign = HorizontalAlignment.Right;
             // 
@@ -266,10 +265,10 @@
             // 
             btnvirgula.BackColor = SystemColors.Control;
             btnvirgula.Cursor = Cursors.Hand;
-            btnvirgula.Location = new Point(11, 325);
-            btnvirgula.Margin = new Padding(4, 3, 4, 3);
+            btnvirgula.Location = new Point(9, 240);
+            btnvirgula.Margin = new Padding(3, 2, 3, 2);
             btnvirgula.Name = "btnvirgula";
-            btnvirgula.Size = new Size(81, 55);
+            btnvirgula.Size = new Size(65, 41);
             btnvirgula.TabIndex = 22;
             btnvirgula.Text = ",";
             btnvirgula.UseVisualStyleBackColor = false;
@@ -277,10 +276,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 23F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(379, 400);
+            ClientSize = new Size(303, 296);
             Controls.Add(btnvirgula);
             Controls.Add(textResultado);
             Controls.Add(btncinco);
@@ -300,10 +299,10 @@
             Controls.Add(btn2);
             Controls.Add(btn1);
             Controls.Add(btn0);
-            Font = new Font("Sitka Small", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
