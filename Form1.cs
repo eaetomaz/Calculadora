@@ -5,11 +5,13 @@ using System.Threading;
 using System.Linq.Expressions;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace Calculadora
 {
     public partial class Form1 : Form
     {
+        List<string> historicoCalculos = new List<string>();
 
         public double Resultado { get; set; }
         public double Valor { get; set; }
@@ -153,6 +155,7 @@ namespace Calculadora
                             break;
                     }
 
+                    historicoCalculos.Add(lcalculo.Text + textResultado.Text);
                     textResultado.Text = Convert.ToString(Resultado);
                     lcalculo.Text = Convert.ToString(Resultado);
 
@@ -494,6 +497,9 @@ namespace Calculadora
 
         private void btnLimpadig_Click(object sender, EventArgs e)
         {
+            // Substitua "button1" pelo nome real do seu botão
+            btnLimpadig.Image = Properties.Resources.imagedig;
+
             if (!string.IsNullOrEmpty(textResultado.Text))
             {
                 string numeroAtual = textResultado.Text;
@@ -506,6 +512,43 @@ namespace Calculadora
                 MessageBox.Show("Não há nada para apagar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void lblOperacao_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void textResultado_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void btnMC_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnMR_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnmmais_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnmmenos_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnms_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnmv_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lcalculo_Click(object sender, EventArgs e)
+        {
+        }
+
     }
 }
 

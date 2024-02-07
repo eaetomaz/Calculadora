@@ -253,6 +253,7 @@
             lblOperacao.Name = "lblOperacao";
             lblOperacao.Size = new Size(0, 17);
             lblOperacao.TabIndex = 18;
+            lblOperacao.Click += lblOperacao_Click;
             // 
             // btncinco
             // 
@@ -269,15 +270,16 @@
             // textResultado
             // 
             textResultado.Font = new Font("Arial", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            textResultado.Location = new Point(-8, 135);
+            textResultado.Location = new Point(-8, 132);
             textResultado.Margin = new Padding(4, 3, 4, 3);
             textResultado.MaxLength = 8;
             textResultado.Multiline = true;
             textResultado.Name = "textResultado";
             textResultado.ReadOnly = true;
-            textResultado.Size = new Size(409, 65);
+            textResultado.Size = new Size(409, 68);
             textResultado.TabIndex = 21;
             textResultado.TextAlign = HorizontalAlignment.Right;
+            textResultado.TextChanged += textResultado_TextChanged;
             // 
             // btnvirgula
             // 
@@ -366,6 +368,8 @@
             // 
             // btnLimpadig
             // 
+            btnLimpadig.BackgroundImage = Properties.Resources.imagedig;
+            btnLimpadig.BackgroundImageLayout = ImageLayout.Center;
             btnLimpadig.Cursor = Cursors.Hand;
             btnLimpadig.Image = (Image)resources.GetObject("btnLimpadig.Image");
             btnLimpadig.Location = new Point(298, 269);
@@ -385,6 +389,7 @@
             btnMC.Size = new Size(41, 23);
             btnMC.TabIndex = 30;
             btnMC.Text = "MC";
+            btnMC.Click += btnMC_Click;
             // 
             // btnMR
             // 
@@ -395,6 +400,7 @@
             btnMR.Size = new Size(41, 23);
             btnMR.TabIndex = 31;
             btnMR.Text = "MR";
+            btnMR.Click += btnMR_Click;
             // 
             // btnmmais
             // 
@@ -405,6 +411,7 @@
             btnmmais.Size = new Size(39, 23);
             btnmmais.TabIndex = 32;
             btnmmais.Text = "M+";
+            btnmmais.Click += btnmmais_Click;
             // 
             // btnmmenos
             // 
@@ -415,6 +422,7 @@
             btnmmenos.Size = new Size(34, 23);
             btnmmenos.TabIndex = 33;
             btnmmenos.Text = "M-";
+            btnmmenos.Click += btnmmenos_Click;
             // 
             // btnms
             // 
@@ -425,6 +433,7 @@
             btnms.Size = new Size(40, 23);
             btnms.TabIndex = 34;
             btnms.Text = "MS";
+            btnms.Click += btnms_Click;
             // 
             // btnmv
             // 
@@ -435,6 +444,7 @@
             btnmv.Size = new Size(36, 23);
             btnmv.TabIndex = 35;
             btnmv.Text = "Mv";
+            btnmv.Click += btnmv_Click;
             // 
             // lcalculo
             // 
@@ -444,13 +454,14 @@
             lcalculo.Name = "lcalculo";
             lcalculo.Size = new Size(0, 23);
             lcalculo.TabIndex = 36;
+            lcalculo.Click += lcalculo_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(396, 636);
+            ClientSize = new Size(394, 636);
             Controls.Add(lcalculo);
             Controls.Add(btnmv);
             Controls.Add(btnms);
