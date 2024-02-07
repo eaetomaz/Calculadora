@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora\\Calculadora.csproj": {}
+    "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora-científica\\Calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora\\Calculadora.csproj": {
+    "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora-científica\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora-científica\\Calculadora.csproj",
         "projectName": "Calculadora",
-        "projectPath": "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectPath": "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora-científica\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\Guilherme\\Desktop\\Calculadora\\Calculadora-científica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",

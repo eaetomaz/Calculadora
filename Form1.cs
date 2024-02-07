@@ -4,6 +4,7 @@ using System.Security.Policy;
 using System.Threading;
 using System.Linq.Expressions;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 namespace Calculadora
 {
@@ -151,10 +152,10 @@ namespace Calculadora
                             Resultado = Valor / Convert.ToDouble(textResultado.Text);
                             break;
                     }
-                    
+
                     textResultado.Text = Convert.ToString(Resultado);
-                    lblOperacao.Text = "=";
-                    
+                    lcalculo.Text = Convert.ToString(Resultado);
+
                 }
                 else
                 {
@@ -183,7 +184,7 @@ namespace Calculadora
                     OperacaoSelecionada = Operacao.Adicao;
                     Valor = Convert.ToDouble(textResultado.Text);
                     textResultado.Text = "";
-                    lblOperacao.Text = "+";
+                    lcalculo.Text = Valor + " + ";
                 }
                 else
                 {
@@ -223,7 +224,7 @@ namespace Calculadora
                     OperacaoSelecionada = Operacao.Subtracao;
                     Valor = Convert.ToDouble(textResultado.Text);
                     textResultado.Text = "";
-                    lblOperacao.Text = "-";
+                    lcalculo.Text = Valor + " - ";
                 }
                 else
                 {
@@ -259,7 +260,7 @@ namespace Calculadora
                     OperacaoSelecionada = Operacao.Multiplicacao;
                     Valor = Convert.ToDouble(textResultado.Text);
                     textResultado.Text = "";
-                    lblOperacao.Text = "*";
+                    lcalculo.Text = Valor + " * ";
                 }
                 else
                 {
@@ -297,10 +298,10 @@ namespace Calculadora
                 // Verificar se há um valor antes de atribuir a operação
                 if (!string.IsNullOrEmpty(textResultado.Text))
                 {
-                        OperacaoSelecionada = Operacao.Divisao;
-                        Valor = Convert.ToDouble(textResultado.Text);
-                        textResultado.Text = "";
-                        lblOperacao.Text = "/";
+                    OperacaoSelecionada = Operacao.Divisao;
+                    Valor = Convert.ToDouble(textResultado.Text);
+                    textResultado.Text = "";
+                    lcalculo.Text = Valor + " / ";
 
                 }
                 else
@@ -324,7 +325,7 @@ namespace Calculadora
         private void btnlimpar_Click(object sender, EventArgs e)
         {
             textResultado.Text = "";
-            lblOperacao.Text = "";
+            lcalculo.Text = "";
         }
 
 
@@ -340,5 +341,172 @@ namespace Calculadora
                 textResultado.Text += ",";
 
         }
+
+        private void btnmaismenos_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (!string.IsNullOrEmpty(textResultado.Text))
+                {
+
+                    double numeroAtual = Convert.ToDouble(textResultado.Text);
+
+                    numeroAtual = -numeroAtual;
+
+                    textResultado.Text = numeroAtual.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Insira um número antes de pressionar +/-", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Erro de formato: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btninverso_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(textResultado.Text))
+                {
+                    double numeroAtual = Convert.ToDouble(textResultado.Text);
+
+                    double inverso = 1 / numeroAtual;
+
+                    textResultado.Text = inverso.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Insira um número antes de pressionar o botão 1/x", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Erro de formato: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (DivideByZeroException)
+            {
+                MessageBox.Show("Não é possível dividir por zero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnquadrado_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Verificar se há um número no visor
+                if (!string.IsNullOrEmpty(textResultado.Text))
+                {
+                    double numeroAtual = Convert.ToDouble(textResultado.Text);
+                    double quadrado = Math.Pow(numeroAtual, 2);
+
+                    textResultado.Text = quadrado.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Insira um número antes de pressionar o botão x²", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Erro de formato: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnraiz_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Verificar se há um número no visor
+                if (!string.IsNullOrEmpty(textResultado.Text))
+                {
+                    double numeroAtual = Convert.ToDouble(textResultado.Text);
+                    double raiz = Math.Sqrt(numeroAtual);
+
+                    textResultado.Text = raiz.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Insira um número antes de definir essa operação", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Erro de formato: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void btnporcentagem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Verificar se há um número no visor
+                if (!string.IsNullOrEmpty(textResultado.Text))
+                {
+                    double numeroAtual = Convert.ToDouble(textResultado.Text);
+                    double porcentagem = (numeroAtual * 10) / 100;
+
+                    textResultado.Text = porcentagem.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Insira um número antes de definir essa operação", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Erro de formato: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnlimpaultimodig_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textResultado.Text))
+            {
+                textResultado.Text = "";
+            }
+        }
+
+        private void btnLimpadig_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textResultado.Text))
+            {
+                string numeroAtual = textResultado.Text;
+                numeroAtual = numeroAtual.Substring(0, numeroAtual.Length - 1);
+
+                textResultado.Text = numeroAtual;
+            }
+            else
+            {
+                MessageBox.Show("Não há nada para apagar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
+
+
